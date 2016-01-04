@@ -6,6 +6,7 @@ cd $OPENSHIFT_REPO_DIR
 #Otherwise they will be deleted on every deployment.
 #ln -s $OPENSHIFT_DATA_DIR/uploads web
 
+composer self-update
 composer install --no-dev --optimize-autoloader
 
 #if you are using DoctrineMigrationsBundle
